@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@ body{
     padding:0;
     margin: 0;
     height: 100%;
+    font-family:'Noto Sans', sans-serif;
 }
 
 .container{
@@ -20,11 +23,18 @@ body{
     grid-template-columns: 2fr 1fr;
     grid-template-rows:auto;
     padding:1rem;
+    grid-gap:20px;
     box-shadow:0 3px 5px 0 rgba(0,0,0,0.75);
+    & img{
+        height: 20px;
+        width: 20px;
+    }
 }
 
+
+
 .header h3{
-    text-align:right;
+    text-align:center;
 }
 
 input{
@@ -34,6 +44,11 @@ input{
     height:1.5rem;
     background-color:  rgba(231, 236, 236, 0.944);
     border:none;
+    width:100%;
+}
+
+.search-bar{
+    display:flex;
 }
 
 .header-profile{
@@ -43,6 +58,21 @@ input{
     grid-column-end:3;
     align-items:center;
 }
+
+.header-profile-user{
+    display:flex;
+    & img{
+        height: 70px;
+        width: 70px;
+    }
+}
+
+.header-login-profile{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
 
 .header-profile > .button-input{
     justify-content:space-between;
@@ -61,9 +91,33 @@ button{
     grid-row-end:3;
     grid-column-end:2;
     padding: 1rem;
-    background-color: lightskyblue;
+    background-color: #0284c7;
     color:white;
+    
 }
+
+.sidebar > .sidebar-header{
+    display:flex;
+    & img{
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+.sidebar img{
+    width: 20px;
+    height: 20px;
+
+}
+
+.sidebar > .menu > div,
+.menu-setting > div{
+    display:flex;
+    gap:21px;
+    font-weight: bold;
+}
+
 
 .sidebar > div{
     padding-top:2rem;
@@ -93,14 +147,18 @@ button{
 .announcement .menu,
 .trending .social{
     padding:20px;
-    border: 1px solid #000;
     border-radius: 5%;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color:black;
 }
 
 .social > .profile,
 .menu > .information  {
     padding:10px;
 }
+
+
 
 .announcement .menu > *{
     border-bottom: 1px solid black;
@@ -109,6 +167,7 @@ button{
 .announcement .menu > .policy{
     border-bottom:none;
 }
+
 .container-card{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
@@ -116,8 +175,10 @@ button{
 }
 
 .card{
-    border: 1px solid #000;
     padding: 20px;
     background-color: white;
     border-radius: .5rem;
+    border-left:2px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
