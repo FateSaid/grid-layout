@@ -4,79 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout</title>
+    <link rel="stylesheet" href="layout.css">
 </head>
 <body>
-    <div class="header">
-        <div class="search">
-            <input type="search">
+    <div class="container">
+        <div class="header">
+            
+                <input type="search" placeholder="Search...">
+            <div class="header-login">
+                
+                
+                    <div class="alarm"></div>
+                    <div class="logo"></div>
+                    <h3>Morgan Oakley</h3>
+            </div>
+                <div class="header-profile">
+                    <div class="header-profile-user">
+                        <p>Hi there,</p>
+                        <h4>Morgan Oakley (@morgan)</h4>
+                    </div>
+                    <div class="button-input">
+                        <button>new</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            
         </div>
-        <div class="alarm"></div>
-        <div class="logo"></div>
-        <h2>Morgan Oakley</h2>
-    </div>
-    <div class="sidebar">
-        <div class="sidebar-header">
-            <div class="logo"></div>
-            <h2>Dashboard</h2>
-        </div>
-        <div class="menu">
-            <div>Home</div>
-            <div>Profile</div>
-            <div>Messages</div>
-            <div>History</div>
-            <div>Tasks</div>
-            <div>Communities</div>
-        </div>
-        <div class="setting">
-            <div>Settings</div>
-            <div>Support</div>
-            <div>Privacy</div>
-        </div>
-    </div>
-    <div class="main-content">
-        <div class="project">
-            <h2>Your Projects</h2>
-            <div class="card">
-                <h3>Super Cool Project</h3>
-                <p></p>
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo"></div>
+                <h2>Dashboard</h2>
             </div>
-            <div class="card">
-                <h3>Less Cool project</h3>
-                <p></p>
+            <div class="menu">
+                <div>Home</div>
+                <div>Profile</div>
+                <div>Messages</div>
+                <div>History</div>
+                <div>Tasks</div>
+                <div>Communities</div>
             </div>
-            <div class="card">
-                <h3>Impossible App</h3>
-                <p></p>
-            </div>
-            <div class="card">
-                <h3>Easy Peasy App</h3>
-                <p></p>
-            </div>
-            <div class="card">
-                <h3>Ad Blocker</h3>
-                <p></p>
-            </div>
-            <div class="card">
-                <h3>Money Maker</h3>
-                <p></p>
+            <div class="setting">
+                <div>Settings</div>
+                <div>Support</div>
+                <div>Privacy</div>
             </div>
         </div>
-        <div class="right-content">
-            <div class="announcement">
-                <h2>Announcement</h2>
-                <div class="menu">
-                    <div class="maintenance"></div>
-                    <div class="community"></div>
-                    <div class="policy"></div>
+        <div class="main-content">
+            <div class="project">
+                <h4>Your Projects</h4>
+                <div class="container-card">
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, deleniti.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Less Cool project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio accusamus eligendi facere sed. Blanditiis, dolorum.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Impossible App</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque nobis excepturi recusandae! Omnis, magnam? Veritatis!</p>
+                    </div>
+                    <div class="card">
+                        <h3>Easy Peasy App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ad assumenda numquam porro non facere?</p>
+                    </div>
+                    <div class="card">
+                        <h3>Ad Blocker</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quisquam minus reprehenderit incidunt similique quam.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Money Maker</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae eligendi fuga beatae similique deleniti harum!</p>
+                    </div>
                 </div>
             </div>
-            <div class="trending">
-                <h2>Trending</h2>
-                <div class="social">
-                    <div class="profile"></div>
-                    <div class="profile"></div>
-                    <div class="profile"></div>
-                    <div class="profile"></div>
+            <div class="right-content">
+                <div class="announcement">
+                    <h4>Announcement</h4>
+                    <div class="menu">
+                        <div class="maintenance information">
+                            <h5>Site Maintenance</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, ab! Minus cum ut velit saepe!</p>
+                        </div>
+                        <div class="community information">
+                            <h5>Community Share Day</h5>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo omnis corporis nulla enim non veritatis?</p>
+                        </div>
+                        <div class="policy information">
+                            <h5>Update Private Policy</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit magni labore rerum explicabo ipsa accusantium.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <h4>Trending</h4>
+                    <div class="social">
+                        <div class="profile">
+                            <span>@Teagan</span>
+                            <p>World Peace Builder</p>
+                        </div>
+                        <div class="profile">
+                            <span>@Morgan</span>
+                            <p>Super Cool Dad</p>
+                        </div>
+                        <div class="profile">
+                            <span>@Kendall</span>
+                            <p>Life changing app</p>
+                        </div>
+                        <div class="profile">
+                            <span>@Alec</span>
+                            <p>No traffic Maker</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
