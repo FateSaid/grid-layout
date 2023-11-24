@@ -171,14 +171,31 @@ button{
 .container-card{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:10px;
+    grid-gap:10px;
+    & h3{
+        padding-bottom:10px;
+    }
 }
 
 .card{
     padding: 20px;
     background-color: white;
     border-radius: .5rem;
-    border-left:2px;
+    border-left:4px solid rgb(245, 200, 53);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    & img{
+        height: 15px;
+        width: 15px;
 
+    }
+
+}
+
+.card-image{
+    display:flex;
+    justify-content: right;
+    gap:10px;
+    padding:10px;
+    align-items:flex-end;
+    height:100px;
 }
